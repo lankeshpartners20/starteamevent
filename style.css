@@ -44,11 +44,12 @@ nav {
 nav ul {
   list-style: none;
   display: flex;
-  gap: 2rem;
+  gap: 3rem;
 }
 
 nav ul li a {
   color: #fff;
+  font-size: 1.2rem;
   text-decoration: none;
   font-weight: bold;
   transition: color 0.3s ease;
@@ -124,6 +125,7 @@ nav ul li a.active {
 .btn:hover {
   background: #e6004c;
 }
+
 
 /* SERVICES SECTION - Responsive Grid Layout */
 .services {
@@ -445,5 +447,226 @@ footer .underline.sp {
     font-size: 0.9rem;
   }
 }
+
+
+.dark-theme {
+  background: #000;
+  color: #fff;
+  padding: 80px 20px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* ABOUT INTRO */
+.about-banner {
+  position: relative;
+  background: url("Pictures/event1.jpg") center/cover no-repeat;
+  height: 30vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-align: center;
+  overflow: hidden;
+}
+
+/* Dark overlay for readability */
+.banner-overlay {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+}
+
+/* Content on top of banner */
+.banner-content {
+  position: relative;
+  z-index: 2;
+}
+
+.banner-content h1 {
+  font-size: 3.5rem;
+  font-family: 'Orbitron', sans-serif;
+  color: #ff3366;
+  margin-bottom: 0.5rem;
+}
+
+.banner-content p {
+  font-size: 1.2rem;
+  color: #ccc;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .about-banner {
+    height: 40vh;
+  }
+
+  .banner-content h1 {
+    font-size: 2.2rem;
+  }
+
+  .banner-content p {
+    font-size: 1rem;
+  }
+}
+
+
+.about-intro h2 {
+  text-align: center;
+  color: #ff3366;
+  font-size: 2.8rem;
+  margin-bottom: 40px;
+}
+
+.intro-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  align-items: center;
+  justify-content: center;
+}
+
+.intro-text {
+  flex: 1 1 500px;
+}
+
+.intro-text p {
+  font-size: 1.1rem;
+  color: #ccc;
+  margin-bottom: 20px;
+  line-height: 1.7;
+}
+
+.intro-img {
+  flex: 1 1 400px;
+}
+
+.intro-img img {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 0 30px rgba(255, 51, 102, 0.1);
+}
+
+/* MISSION / VISION */
+.mission-vision-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 80px;
+}
+
+.mv-card {
+  background: #1a1a1a;
+  padding: 30px;
+  border-radius: 12px;
+  flex: 1 1 350px;
+  text-align: center;
+  box-shadow: 0 4px 20px rgba(255, 255, 255, 0.05);
+}
+
+.mv-card i {
+  font-size: 40px;
+  color: #ff3366;
+  margin-bottom: 15px;
+}
+
+.mv-card h3 {
+  color: #fff;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.underline {
+  width: 40px;
+  height: 3px;
+  background: #ff3366;
+  margin: 0 auto 20px;
+  border-radius: 2px;
+}
+
+.mv-card p {
+  font-size: 1rem;
+  color: #ccc;
+}
+
+/* FAQ TOGGLE */
+.faq-section {
+  margin-top: 100px;
+}
+
+.faq-section h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #ff3366;
+  margin-bottom: 40px;
+}
+
+.faq-item {
+  margin-bottom: 20px;
+  border-bottom: 1px solid #333;
+}
+
+.faq-question {
+  background: none;
+  border: none;
+  width: 100%;
+  text-align: left;
+  font-size: 1.1rem;
+  color: #fff;
+  padding: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  position: relative;
+}
+
+.faq-question::after {
+  content: '+';
+  position: absolute;
+  right: 20px;
+  font-size: 1.2rem;
+  color: #ff3366;
+  transition: transform 0.3s ease;
+}
+
+.faq-question.active::after {
+  content: '−';
+  transform: rotate(180deg);
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease;
+  background: #141414;
+  padding: 0 15px;
+}
+
+.faq-answer p {
+  margin: 15px 0;
+  color: #ccc;
+  line-height: 1.6;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .intro-content {
+    flex-direction: column;
+  }
+
+  .mv-card {
+    flex: 1 1 100%;
+  }
+
+  .faq-question::after {
+    right: 10px;
+  }
+}
+
 
 
