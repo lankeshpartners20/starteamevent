@@ -448,6 +448,7 @@ footer .underline.sp {
   }
 }
 
+/*About*/
 
 .dark-theme {
   background: #000;
@@ -667,6 +668,671 @@ footer .underline.sp {
     right: 10px;
   }
 }
+
+
+/*Event*/
+
+.events-banner {
+  position: relative;
+  background: url('Pictures/event3.jpg') center/cover no-repeat;
+  height: 30vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-align: center;
+  overflow: hidden;
+}
+
+.banner-overlay {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+}
+
+.banner-content {
+  position: relative;
+  z-index: 2;
+  padding: 0 20px;
+}
+
+.banner-content h1 {
+  font-size: 3.5rem;
+  font-family: 'Orbitron', sans-serif;
+  color: #ff3366;
+  margin-bottom: 0.5rem;
+}
+
+.banner-content p {
+  font-size: 1.2rem;
+  color: #ccc;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .events-banner {
+    height: 40vh;
+  }
+
+  .banner-content h1 {
+    font-size: 2.2rem;
+  }
+
+  .banner-content p {
+    font-size: 1rem;
+  }
+}
+
+.events-section {
+  background: #000000;
+  color: #fff;
+  padding: 80px 20px;
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+}
+
+.events-section h2 {
+  color: #ff3366;
+  font-size: 2.8rem;
+  margin-bottom: 50px;
+  font-family: 'Orbitron', sans-serif;
+}
+
+.event-card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 40px;
+  max-width: 1000px;
+  margin: auto;
+  background: #1a1a1a;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(255, 255, 255, 0.05);
+}
+
+.event-info {
+  flex: 1 1 500px;
+  text-align: left;
+}
+
+.event-info h3 {
+  font-size: 1.8rem;
+  color: #ff3366;
+  margin-bottom: 10px;
+}
+
+.event-info p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #ccc;
+  margin-bottom: 20px;
+}
+
+.event-btn {
+  display: inline-block;
+  margin: 20px 0;
+  padding: 10px 25px;
+  background-color: #ff3366;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 6px;
+  transition: background 0.3s ease;
+}
+
+.event-btn:hover {
+  background-color: #e6004c;
+}
+
+/* Countdown */
+.countdown {
+  display: flex;
+  gap: 20px;
+}
+
+/* Upcoming Event Section Container */
+.events-section {
+  background: #000;
+  padding: 60px 20px;
+  color: #fff;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.events-section h2 {
+  text-align: center;
+  font-family: 'Orbitron', sans-serif;
+  color: #ff3366;
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+}
+
+/* FLEX LAYOUT for desktop/laptop */
+.event-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+  background: #1a1a1a;
+  padding: 40px;
+  border-radius: 16px;
+  max-width: 1200px;
+  margin: auto;
+  flex-wrap: nowrap;
+}
+
+/* LEFT: Event Info */
+.event-info {
+  flex: 1;
+  text-align: left;
+}
+
+.event-info h3 {
+  color: #ff3366;
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.event-info p {
+  color: #ccc;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  font-size: 1rem;
+}
+
+/* Countdown Box */
+.countdown {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.countdown div {
+  background: #000;
+  padding: 12px 16px;
+  border-radius: 8px;
+  text-align: center;
+  min-width: 60px;
+}
+
+.countdown span {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #ff3366;
+}
+
+.countdown label {
+  display: block;
+  font-size: 0.75rem;
+  color: #999;
+}
+
+/* Button */
+.event-button {
+  background: #ff3366;
+  color: #fff;
+  padding: 10px 22px;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background 0.3s ease;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.event-button:hover {
+  background: #e6004c;
+}
+
+/* RIGHT: Calendar or Image Box */
+.event-calendar {
+  flex: 0 0 360px;
+  position: relative;
+}
+
+.event-calendar img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.event-calendar .calendar-date {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  background: #ff3366;
+  padding: 8px 12px;
+  border-radius: 8px;
+  color: #fff;
+  text-align: center;
+  font-family: 'Orbitron', sans-serif;
+}
+
+.calendar-date .month {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+}
+
+.calendar-date .day {
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+/* MOBILE RESPONSIVE */
+@media (max-width: 768px) {
+  .event-box {
+    flex-direction: column;
+    padding: 20px;
+    gap: 20px;
+    text-align: center;
+  }
+
+  .event-info {
+    text-align: center;
+  }
+
+  .countdown {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .event-calendar {
+    width: 100%;
+  }
+
+  .event-calendar img {
+    max-height: 200px;
+    object-fit: cover;
+  }
+
+  .calendar-date {
+    bottom: 10px;
+    right: 10px;
+  }
+}
+
+.countdown div {
+  background: #111;
+  padding: 15px 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.countdown span {
+  font-size: 2rem;
+  color: #ff3366;
+  display: block;
+}
+
+.countdown label {
+  font-size: 0.8rem;
+  color: #aaa;
+}
+
+/* Calendar */
+.event-calendar {
+  flex: 1 1 250px;
+  background: #111;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.calendar-box {
+  margin-top: 10px;
+  background: #222;
+  padding: 15px;
+  border-radius: 8px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.calendar-img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  max-height: 250px;
+  object-fit: cover;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.calendar-box strong {
+  font-size: 1.2rem;
+  color: #fff;
+}
+
+.calendar-box p {
+  color: #aaa;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .event-card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .event-info, .event-calendar {
+    flex: 1 1 100%;
+  }
+
+  .event-info {
+    text-align: center;
+  }
+}
+
+
+/* Timeline Container */
+.timeline {
+  position: relative;
+  margin: 60px auto;
+  padding-left: 40px;
+  border-left: 2px solid #333;
+  max-width: 800px;
+}
+
+/* Timeline Item */
+.timeline-item {
+  position: relative;
+  margin-bottom: 60px;
+}
+
+/* Timeline Date */
+.timeline-date {
+  position: absolute;
+  left: -80px;
+  top: 0;
+  background: #ff3366;
+  color: #fff;
+  padding: 6px 12px;
+  font-weight: bold;
+  font-size: 0.85rem;
+  border-radius: 20px;
+  white-space: nowrap;
+}
+
+/* Content Container */
+.timeline-content {
+  background: #1a1a1a;
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  gap: 20px;
+  box-shadow: 0 0 20px rgba(255, 51, 102, 0.05);
+}
+
+/* Event Image */
+.timeline-content img {
+  width: 150px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 10px;
+  filter: grayscale(100%);
+  opacity: 0.8;
+}
+
+/* Event Text */
+.timeline-text h3 {
+  margin-top: 0;
+  font-size: 1.2rem;
+  color: #ff3366;
+}
+
+.timeline-text p {
+  margin: 10px 0;
+  color: #ccc;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.event-status.ended {
+  display: inline-block;
+  padding: 4px 10px;
+  font-size: 1rem;
+  color: #999;
+  border: 1px solid #444;
+  border-radius: 20px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .timeline-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .timeline-date {
+    left: -60px;
+  }
+
+  .timeline-content img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+  }
+}
+
+
+/*Contact*/
+
+.contact-banner {
+  position: relative;
+  background: url("Pictures/contact.jpg") center/cover no-repeat;
+  height: 30vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-align: center;
+  overflow: hidden;
+}
+
+.banner-overlay {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+}
+
+.banner-content {
+  position: relative;
+  z-index: 2;
+  padding: 0 20px;
+}
+
+.banner-content h1 {
+  font-size: 3.5rem;
+  font-family: 'Orbitron', sans-serif;
+  color: #ff3366;
+  margin-bottom: 0.5rem;
+}
+
+.banner-content p {
+  font-size: 1.2rem;
+  color: #ccc;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .contact-banner {
+    height: 40vh;
+  }
+
+  .banner-content h1 {
+    font-size: 2.2rem;
+  }
+
+  .banner-content p {
+    font-size: 1rem;
+  }
+}
+
+.contact-section {
+  background: #000;
+  color: #fff;
+  padding: 80px 20px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.contact-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.contact-info,
+.contact-form {
+  flex: 1 1 500px;
+  background: #1a1a1a;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(255, 255, 255, 0.05);
+}
+
+.contact-info h2,
+.contact-form h2 {
+  font-family: 'Orbitron', sans-serif;
+  color: #ff3366;
+  margin-bottom: 20px;
+}
+
+.contact-info ul {
+  list-style: none;
+  padding: 0;
+}
+
+.contact-info ul li {
+  margin-bottom: 15px;
+  font-size: 1rem;
+}
+
+.contact-info ul li i {
+  margin-right: 10px;
+  color: #ff3366;
+  font-size: 1.2rem;
+}
+
+.contact-info {
+  background: #1a1a1a;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(255, 255, 255, 0.05);
+  flex: 1 1 500px;
+}
+
+.contact-info h2 {
+  font-family: 'Orbitron', sans-serif;
+  color: #ff3366;
+  margin-bottom: 25px;
+  font-size: 1.8rem;
+}
+
+/* Info Rows */
+.info-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.icon {
+  background: #ff3366;
+  color: #fff;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+  flex-shrink: 0;
+  box-shadow: 0 0 10px rgba(255, 51, 102, 0.3);
+}
+
+.details h4 {
+  margin: 0;
+  font-size: 1rem;
+  color: #fff;
+}
+
+.contact-info a {
+  color: #ccc;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.contact-info a:hover {
+  color: #ff3366;
+  text-decoration: underline;
+}
+
+.details p {
+  margin: 3px 0 0;
+  color: #ccc;
+  font-size: 0.95rem;
+}
+
+/* Form Styles */
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form input,
+.contact-form textarea {
+  background: #111;
+  border: none;
+  border-radius: 6px;
+  padding: 12px 15px;
+  margin-bottom: 15px;
+  color: #fff;
+  font-size: 1rem;
+  outline: none;
+}
+
+.contact-form button {
+  background: #ff3366;
+  color: #fff;
+  border: none;
+  padding: 12px;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.contact-form button:hover {
+  background: #e6004c;
+}
+
+/* Map */
+.contact-map iframe {
+  margin-top: 60px;
+  border-radius: 12px;
+  box-shadow: 0 0 12px rgba(255, 255, 255, 0.05);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .contact-container {
+    flex-direction: column;
+  }
+
+  .contact-info, .contact-form {
+    width: 100%;
+  }
+}
+
 
 
 
